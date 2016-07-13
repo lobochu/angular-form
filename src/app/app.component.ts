@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import {FruitForm} from './fruit-form.component';
 
 @Component({
-  moduleId: module.id,
   selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css']
+  template: `
+  <fruit-form></fruit-form>
+  `,
+  directives: [FruitForm]
 })
 export class AppComponent {
   title = 'app works!';
